@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="PreferenceCategory_title" />
+    <PreferenceCategory android:title="@string/app_name" />
     <PreferenceScreen
-        android:key="key1"
-        android:title="PreferenceScreen_title"
-        android:summary="PreferenceScreen_summary">
+        android:summary="描述..."
+        android:title="@string/app_name">
         <intent
-            android:action="key1.ACTION"
-            android:targetPackage="key1.package"
-            android:targetClass="key1.class" />
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.sndn.location.MainActivity"
+            android:targetPackage="com.sndn.location" />
     </PreferenceScreen>
 </PreferenceScreen>
+
+    <!--<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="PreferenceCategory_title" />
+        <PreferenceScreen
+            android:key="key1"
+            android:title="PreferenceScreen_title"
+            android:summary="PreferenceScreen_summary">
+            <intent
+                android:action="key1.ACTION"
+                android:targetPackage="key1.package"
+                android:targetClass="key1.class" />
+        </PreferenceScreen>
+    </PreferenceScreen>-->
